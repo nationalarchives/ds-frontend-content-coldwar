@@ -1,0 +1,16 @@
+.s_body {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5ex; color: #FFFFFF; background-color: #000000}
+.s_numberheadings {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; text-transform: capitalize; color: #99FFFF; background-color: #000000}
+.s_caption {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.7ex; color: #99FFFF; background-color: #000000}
+.s_default {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5ex; font-weight: 200; color: #FFFFFF}
+.s_titles {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 2ex; font-weight: 100; color: #FFFFFF; background-color: #000000}
+.popup_body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5ex; color: #FFFFFF ; padding-left: 1ex}
+.time_text {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5ex; font-weight: 200; color: #000000; background-color: #FFFFFF}
+.time_date {  font-family: Arial, Helvetica, sans-serif; font-size: 1.5ex; color: #000000; font-weight: bold; background-color: #FFFFFF}
+.letter_body { font-family: "Times New Roman", Times, serif; font-size: 1.5ex; color: #FFFFFF ; padding-left: 1ex }
+.gloss_text { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5ex; font-weight: 200; color: #FFFFFF; background-color: #333333}
+.s-numberheadings { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; text-transform: capitalize; color: #99FFFF }
+body {  margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+body {  }
+.table-gt {  border: 5px #333333 solid; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px}
+.s_bluebody { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #CCFFFF; background-color: #000000 }
+.s_whitecaption { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5ex; color: #FFFFFF; background-color: #000000; text-transform: none }

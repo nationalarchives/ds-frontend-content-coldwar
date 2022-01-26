@@ -1,0 +1,4 @@
+      <script language="JavaScript">\n<!--\n\tdocument.write\('<a href=\"JavaScript:OpenPopup\(\\'../bigq.htm(.|\n)*?</noscript>
+
+
+      	<a href="../cold-war-big-question-1.rtf"><img name="bigq" src="../../global/bigq.gif" width="169" height="20"  alt="Big Question" border="0"></a>

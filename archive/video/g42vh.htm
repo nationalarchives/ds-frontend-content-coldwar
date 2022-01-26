@@ -1,0 +1,168 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>The National Archives Learning Curve | Cold War</title>
+<!--#include virtual="/includes/google-analytics-gtm-head.inc" -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+function doPlay() {
+	document.MediaPlayer.DoPlay();
+}
+
+function doStop() {
+	document.MediaPlayer.DoStop();
+}
+
+function doPause() {
+	document.MediaPlayer.DoPause();
+}
+
+function incVolume() {
+	currentLevel = Math.round(document.MediaPlayer.GetVolume() / 12.5);
+	currentLevel++;
+	if(currentLevel > 8) currentLevel = 8;
+	setVolume(currentLevel);
+}
+
+function decVolume() {
+	currentLevel = Math.round(document.MediaPlayer.GetVolume() / 12.5);
+	currentLevel--;
+	if(currentLevel < 0) currentLevel = 0;
+	setVolume(currentLevel);
+}
+
+function setVolume(level) {
+	document.MediaPlayer.SetVolume(level * 12.5);
+	setVolDisplay(level);
+	return true;
+}
+
+function setVolDisplay(level) {
+	i = 1;
+	while(i <= level) {
+		image = eval("document.volDisplay" + i);
+		image.src = "../../global/big/images/vol_on.gif";
+		i++;
+	}
+	while(i <= 8) {
+		image = eval("document.volDisplay" + i);
+		image.src = "../../global/big/images/vol_off.gif";
+		i++;
+	}
+	return true;
+}
+
+function initPage() {
+	setVolDisplay(Math.round(document.MediaPlayer.GetVolume() / 12.5));
+}
+</script>
+<link href="/css/menusmicrosites/breadcrumb.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#000000" text="#990000" link="#990000" vlink="#990000" alink="#990000" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" onLoad="initPage()">
+<!--#include virtual="/includes/google-analytics-gtm-body.inc" -->
+<table border="0" cellpadding="0" cellspacing="0" width="451">
+	<tr> 
+		<td><img name="console_r1_c1" src="../../global/big/images/console_r1_c1.jpg" width="451" height="60" border="0"></td>
+	</tr>
+	<tr> 
+		<td> 
+			<table border="0" cellpadding="0" cellspacing="0" width="451">
+				<tr> 
+					<td valign="top"><img name="console_r2_c1" src="../../global/big/images/console_r2_c1.jpg" width="66" height="260" border="0"></td>
+					<td> 
+						<table border="0" cellpadding="0" cellspacing="0" width="320">
+							<tr>
+								<!-- EDIT THE URL IN THESE OBJECT & EMBED TAGS ONLY -->
+								<td><object id="MediaPlayer"
+									classid="CLSID:CFCDAA03-8BE4-11CF-B84B-0020AFBBCCFA"
+									width="320"
+									height="240">
+										<param name="SRC" value="rtsp://real6.westminster-digital.co.uk/pro/A4i1_320.rm">
+										<param name="AUTOSTART" value="true">
+										<param name="CONTROLS" value="ImageWindow">
+										<param name="CONSOLE" value="console1">
+										<embed name="MediaPlayer"
+										type="audio/x-pn-realaudio-plugin"
+										src="rtsp://real6.westminster-digital.co.uk/pro/A4i1_320.rm"
+										width="320"
+										height="240"
+										autostart="true"
+										controls="ImageWindow"
+										console="console1"
+										></embed></object></td>
+							</tr>
+							<tr> 
+								
+                <td><object
+									classid="CLSID:CFCDAA03-8BE4-11CF-B84B-0020AFBBCCFA"
+									width="320"
+									height="20">
+                    <param name="CONTROLS" value="PositionSlider">
+										<param name="CONSOLE" value="console1">
+										<embed
+										type="audio/x-pn-realaudio-plugin"
+										width="320"
+										height="20"
+										controls="PositionSlider"
+										console="console1"
+										></embed></object></td>
+							</tr>
+						</table>
+					</td>
+					<td valign="top"><img name="console_r2_c3" src="../../global/big/images/console_r2_c3.jpg" width="65" height="260" border="0"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr> 
+		<td width="451" height="138" align="center" background="../../global/big/images/console_r4_c1.jpg"> 
+			<table width="100" border="0" cellspacing="0" cellpadding="0" background="../../global/big/images/bg_fix.jpg">
+				<tr> 
+					<td><a href="#" onClick="doStop()"><img name="stop" src="../../global/big/images/stop.gif" width="20" height="18" border="0"></a></td>
+					<td align="center"><a href="#" onClick="doPause()"><img name="pause" src="../../global/big/images/pause.gif" width="16" height="18" border="0"></a></td>
+					<td align="right"><a href="#" onClick="doPlay()"><img name="play" src="../../global/big/images/play.gif" width="17" height="22" border="0"></a></td>
+				</tr>
+				<tr> 
+					<td colspan="3"><img src="../../global/big/images/spacer.gif" width="1" height="10"></td>
+				</tr>
+				<tr> 
+					<td><a href="#" onClick="decVolume();"><img name="vol_down" src="../../global/big/images/vol_down.gif" width="19" height="17" border="0"></a></td>
+					<td align="center"> 
+						<table width="48" border="0" cellspacing="0" cellpadding="0">
+							<tr> 
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(1);"><img name="volDisplay1" src="../../global/big/images/vol_on.gif" width="4" height="6" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(2);"><img name="volDisplay2" src="../../global/big/images/vol_on.gif" width="4" height="7" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(3);"><img name="volDisplay3" src="../../global/big/images/vol_on.gif" width="4" height="8" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(4);"><img name="volDisplay4" src="../../global/big/images/vol_on.gif" width="4" height="9" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(5);"><img name="volDisplay5" src="../../global/big/images/vol_on.gif" width="4" height="10" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(6);"><img name="volDisplay6" src="../../global/big/images/vol_on.gif" width="4" height="11" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(7);"><img name="volDisplay7" src="../../global/big/images/vol_on.gif" width="4" height="12" border="0"></a></td>
+								<td align="center" valign="bottom"><a href="#" onClick="setVolume(8);"><img name="volDisplay8" src="../../global/big/images/vol_on.gif" width="4" height="13" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+					<td align="right"><a href="#" onClick="incVolume();"><img name="vol_up" src="../../global/big/images/vol_up.gif" width="19" height="17" border="0"></a></td>
+				</tr>
+			</table>
+			<div align="left"><font face="sans-serif" size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="window.close()">Close Video</a></font></div></td>
+	</tr>
+	<tr> 
+	<td><object
+		classid="CLSID:CFCDAA03-8BE4-11CF-B84B-0020AFBBCCFA"
+		width="451"
+		height="30">
+			<param name="CONTROLS" value="StatusBar">
+			<param name="CONSOLE" value="console1">
+			<embed
+			type="audio/x-pn-realaudio-plugin"
+			width="451"
+			height="30"
+			controls="StatusBar"
+			console="console1"
+			></embed></object></td>
+</tr>
+</table>
+<!--#include virtual="/includes/menu/sdc.inc" -->
+</body>
+</html>
